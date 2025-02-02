@@ -1,0 +1,99 @@
+/* Header */
+.header {
+  background-color: var(--primary);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    img {
+      height: 50px;
+    }
+  }
+}
+
+/* Navigation */
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    a {
+      color: var(--white);
+      text-decoration: none;
+      &:hover {
+        color: var(--black);
+      }
+    }
+  }
+}
+
+/* Main */
+.main {
+  min-height: 100vh;
+}
+
+/* Section */
+.section {
+  padding: 40px 0;
+  .section-title { 
+    margin-bottom: 20px;
+  }
+}
+
+/* Hero */
+.hero-section {
+  background-color: var(--gray);
+}
+
+/* News */
+.news-section {
+  .news-list-warpper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .news-section .news-list-warpper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .news-section .news-list-warpper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Post */
+.post {
+  .post-image {
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 20px 0;
+  text-align: center;
+  .footer-logo {
+    margin-bottom: 15px;
+    img {
+      height: 50px;
+    }
+  }
+}
